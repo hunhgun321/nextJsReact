@@ -1,15 +1,13 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-const SparklingLights = dynamic(
-  () => import("../components/SparklingLights/SparklingLights.js"),
-  { ssr: false }
-);
+import Curtain from "../components/Curtain/CurtainCopy.js"
+import MouseFollowLight from "../components/MovingLightMouse/MovingLightMouse.js";
 
 export default function Testing() {
   return (
-    <div style={{ backgroundColor: "transparent" }}>
-      <SparklingLights />
+    <div style={{ backgroundColor: "grey", width: "100vw", height: "100vh" }}>
+      <Curtain/>
     </div>
   );
 }

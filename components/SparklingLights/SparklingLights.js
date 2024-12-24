@@ -47,7 +47,7 @@ export default function SparklingLights() {
 
   useEffect(() => {
     // Create sparkling lights at intervals
-    const intervalId = setInterval(createMovingLight, 500); // Create a new light every 500ms
+    const intervalId = setInterval(createMovingLight, 200); // Create a new light every 500ms // 改第二個para 改lights有幾密
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, []);
 

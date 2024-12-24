@@ -1,7 +1,9 @@
 import CastleIn2D from "../components/Castle/CastleIn2D";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import Curtain from "../components/Curtain/CurtainCopy.js";
 
+import MouseFollowLight from "../components/MovingLightMouse/MovingLightMouse.js";
 import SparklingLights from "../components/SparklingLights/SparklingLights.js";
 
 import {
@@ -25,6 +27,7 @@ export default function Main() {
     <div style={{ display: "flex", flexDirection:'column', justifyContent: "center", alignItems: "center", height: "100vh", width: "100vw" }}>
       <CastleIn2D />
       <SparklingLights/>
+      <Curtain/>
     </div>
   );
 }
